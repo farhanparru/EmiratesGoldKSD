@@ -1,7 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import video from "../assets/Images/5106444-hd_1920_1080_25fps.mp4";
 import TopCollection from "./TopCollection"; // Import TopCollection component
 import Smooth3D from "./Smooth3D";
+import Jewelry from "./Jwellary";
+import TeamMembers from "./TeamMembers";
+import Support from "./Support";
+
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -140,6 +145,9 @@ const Home = () => {
       {/* Top Collection Section */}
       <TopCollection />
       <Smooth3D/>
+      <Jewelry/>
+     <TeamMembers/>
+     <Support/>
     </div>
   );
 };

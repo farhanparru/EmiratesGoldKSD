@@ -1,8 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Log from "../assets/Images/DRH_LOGO_CUTOUT_new.png";
+import Log from "../assets/Images/finallogo.gif";
 
 const TopCollection = () => {
   const settings = {
@@ -97,6 +98,7 @@ const TopCollection = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const NextArrow = ({ onClick }) => {
   return (
     <div
@@ -121,6 +123,7 @@ const NextArrow = ({ onClick }) => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const PrevArrow = ({ onClick }) => {
   return (
     <div

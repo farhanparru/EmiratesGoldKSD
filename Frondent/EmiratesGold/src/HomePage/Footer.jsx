@@ -1,13 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaCcVisa, FaCcMastercard, FaCcAmex, FaCashRegister } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="bg-pink-200 text-gray-700 py-10">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* About Our Store */}
         <div>
           <h2 className="text-xl font-semibold mb-2">About Our Store</h2>
@@ -22,7 +21,7 @@ const Footer = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 text-center md:text-left">
         <div>
           <h3 className="text-lg font-semibold">GOLD SCHEME</h3>
           <p className="text-sm">Payment for India stores</p>
@@ -36,7 +35,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Links Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 border-t border-gray-200 pt-8">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 border-t border-gray-200 pt-8 text-center md:text-left">
         {/* Get To Know Us */}
         <div>
           <h3 className="text-lg font-semibold">Get To Know Us</h3>
@@ -77,35 +76,47 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold">Customer Service</h3>
           <p className="text-sm">+91 22 62300916 (9:00am - 6:00pm)</p>
-          <p className="text-sm">care.in@malabargoldanddiamonds.com</p>
+          <p className="text-sm">care.in@Emiratesgoldanddiamonds.com</p>
           <p className="text-sm mt-4">Malabar Gold & Diamonds, Plot No 44, 45, Street Number 14, Marol MIDC Industry Estate, Andheri East, Mumbai - 400093</p>
         </div>
       </div>
 
       {/* Footer Bottom with Social Media and Payment Icons */}
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-8">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-8 space-y-4 md:space-y-0">
         {/* Social Media Icons */}
-        <div className="flex space-x-4 text-gray-600">
+        <div className="flex justify-center md:justify-start space-x-4 text-gray-600">
           <a href="#facebook" className="hover:text-pink-600">
-          <FaFacebookF className="w-6 h-6" />
+            <FaFacebookF className="w-6 h-6" />
           </a>
           <a href="#instagram" className="hover:text-pink-600">
-          <FaInstagram className="w-6 h-6" />
+            <FaInstagram className="w-6 h-6" />
           </a>
           <a href="#twitter" className="hover:text-pink-600">
-          <FaTwitter className="w-6 h-6" />
+            <FaTwitter className="w-6 h-6" />
           </a>
           <a href="#linkedin" className="hover:text-pink-600">
-          <FaLinkedin className="w-6 h-6" />
+            <FaLinkedin className="w-6 h-6" />
           </a>
         </div>
 
         {/* Payment Icons */}
-        <div className="flex space-x-4 mt-4 md:mt-0">
-          <img src="/visa.png" alt="Visa" className="w-8" />
-          <img src="/mastercard.png" alt="MasterCard" className="w-8" />
-          <img src="/americanexpress.png" alt="American Express" className="w-8" />
-          <img src="/cash-on-delivery.png" alt="Cash On Delivery" className="w-8" />
+        <div className="flex justify-center md:justify-end space-x-4 mt-4 md:mt-0">
+          <div className="flex items-center space-x-1">
+            <FaCcVisa className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
+            <span className="hidden md:block text-sm">Visa</span>
+          </div>
+          <div className="flex items-center space-x-1">
+            <FaCcMastercard className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
+            <span className="hidden md:block text-sm">MasterCard</span>
+          </div>
+          <div className="flex items-center space-x-1">
+            <FaCcAmex className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
+            <span className="hidden md:block text-sm">American Express</span>
+          </div>
+          <div className="flex items-center space-x-1">
+            <FaCashRegister className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
+            <span className="hidden md:block text-sm">Cash On Delivery</span>
+          </div>
         </div>
       </div>
     </footer>

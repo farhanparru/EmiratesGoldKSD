@@ -6,6 +6,8 @@ import Smooth3D from "./Smooth3D";
 import Jewelry from "./Jwellary";
 import TeamMembers from "./TeamMembers";
 import Support from "./Support";
+import Advance from "./Advance";
+import GoldExchange from "./GoldExchange";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -95,6 +97,8 @@ const Home = () => {
         <Smooth3D />
         <Jewelry />
         <TeamMembers />
+        <GoldExchange/>
+        <Advance/>
         <Support />
       </div>
     </div>

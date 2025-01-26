@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaTimes, FaHeart, FaUserAlt } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai";
-import Gold from "../assets/Images/EmiratesGoldLogo.png";
+
 
 const NavigationBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -33,7 +33,7 @@ const NavigationBar = () => {
       <div className="h-16 flex justify-between items-center px-4 lg:px-20">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={Gold} alt="EmiratesGold Logo" className="h-10 w-auto mr-2" />
+      
           <span className="text-xl lg:text-3xl font-bold text-yellow-600">EmiratesGold</span>
         </div>
 

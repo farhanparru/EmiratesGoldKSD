@@ -1,126 +1,124 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaCcVisa, FaCcMastercard, FaCcAmex, FaCashRegister } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaCcVisa, FaCcMastercard, FaCcAmex } from 'react-icons/fa';
+import { RiVisaLine } from 'react-icons/ri';
+import { SiMastercard, SiAmericanexpress } from 'react-icons/si';
 
-const Footer = () => {
+const UAEFooter = () => {
   return (
-    <footer className="bg-pink-200 text-gray-700 py-10">
+    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-        {/* About Our Store */}
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+        {/* About Emirates Gold */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">About Our Store</h2>
-          <p className="text-sm">Get in touch with us for a complete jewellery shopping experience!</p>
+          <h3 className="text-xl font-bold text-yellow-500 mb-4">Emirates Gold</h3>
+          <p className="text-gray-400 mb-4">
+            The premier destination for luxury gold and diamond jewelry in the UAE, offering exquisite craftsmanship since 1999.
+          </p>
+          <div className="flex space-x-4">
+            <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
+              <FaFacebookF className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
+              <FaInstagram className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
+              <FaTwitter className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
+              <FaLinkedin className="w-5 h-5" />
+            </a>
+          </div>
         </div>
 
-        {/* Contact Section */}
-        <div className="md:col-span-2 flex flex-col justify-center">
-          <p className="text-3xl font-bold text-pink-700">1800 5720 916</p>
-          <p className="text-sm">Any Questions? Tollfree no for all stores</p>
-        </div>
-      </div>
-
-      {/* Middle Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 text-center md:text-left">
+        {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold">GOLD SCHEME</h3>
-          <p className="text-sm">Payment for India stores</p>
-          <a href="#pay-online" className="text-pink-600 hover:underline">Pay Online</a>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">GOLD RATE</h3>
-          <p className="text-sm">One best rate across India!</p>
-          <a href="#view-gold-rate" className="text-pink-600 hover:underline">View Gold Rate</a>
-        </div>
-      </div>
-
-      {/* Bottom Links Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 border-t border-gray-200 pt-8 text-center md:text-left">
-        {/* Get To Know Us */}
-        <div>
-          <h3 className="text-lg font-semibold">Get To Know Us</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#about-us" className="hover:text-pink-600">About Us</a></li>
-            <li><a href="#brides-of-india" className="hover:text-pink-600">Brides Of India</a></li>
-            <li><a href="#our-stores" className="hover:text-pink-600">Our Stores</a></li>
-            <li><a href="#csr" className="hover:text-pink-600">CSR</a></li>
-            <li><a href="#blog" className="hover:text-pink-600">Blog</a></li>
-          </ul>
-        </div>
-
-        {/* Let Us Help You */}
-        <div>
-          <h3 className="text-lg font-semibold">Let Us Help You</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#faq" className="hover:text-pink-600">FAQ</a></li>
-            <li><a href="#track-my-order" className="hover:text-pink-600">Track My Order</a></li>
-            <li><a href="#ring-size-guide" className="hover:text-pink-600">Ring Size Guide</a></li>
-            <li><a href="#bangle-size-guide" className="hover:text-pink-600">Bangle Size Guide</a></li>
-            <li><a href="#site-map" className="hover:text-pink-600">Site Map</a></li>
-          </ul>
-        </div>
-
-        {/* Policies */}
-        <div>
-          <h3 className="text-lg font-semibold">Policies</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#refund-policy" className="hover:text-pink-600">Refund Policy</a></li>
-            <li><a href="#buyback-policy" className="hover:text-pink-600">Buyback Policy</a></li>
-            <li><a href="#exchange-policy" className="hover:text-pink-600">Exchange Policy</a></li>
-            <li><a href="#shipping-policy" className="hover:text-pink-600">Shipping Policy</a></li>
-            <li><a href="#terms-of-service" className="hover:text-pink-600">Terms of Service</a></li>
+          <h4 className="text-lg font-semibold text-white mb-4 border-b border-yellow-600 pb-2">Quick Links</h4>
+          <ul className="space-y-3">
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Gold Rate Today</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">New Collections</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Custom Jewelry</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Gold Investment</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">VIP Services</a></li>
           </ul>
         </div>
 
         {/* Customer Service */}
         <div>
-          <h3 className="text-lg font-semibold">Customer Service</h3>
-          <p className="text-sm">+91 22 62300916 (9:00am - 6:00pm)</p>
-          <p className="text-sm">care.in@Emiratesgoldanddiamonds.com</p>
-          <p className="text-sm mt-4">Malabar Gold & Diamonds, Plot No 44, 45, Street Number 14, Marol MIDC Industry Estate, Andheri East, Mumbai - 400093</p>
+          <h4 className="text-lg font-semibold text-white mb-4 border-b border-yellow-600 pb-2">Customer Service</h4>
+          <ul className="space-y-3">
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Contact Us</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">FAQs</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Shipping Policy</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Return Policy</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h4 className="text-lg font-semibold text-white mb-4 border-b border-yellow-600 pb-2">Contact Us</h4>
+          <div className="space-y-3">
+            <div className="flex items-start">
+              <svg className="h-5 w-5 text-yellow-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span className="text-gray-400">Gold Souk, Deira, Dubai, UAE</span>
+            </div>
+            <div className="flex items-start">
+              <svg className="h-5 w-5 text-yellow-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span className="text-gray-400">+971 4 123 4567</span>
+            </div>
+            <div className="flex items-start">
+              <svg className="h-5 w-5 text-yellow-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span className="text-gray-400">info@emiratesgold.ae</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Footer Bottom with Social Media and Payment Icons */}
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-8 space-y-4 md:space-y-0">
-        {/* Social Media Icons */}
-        <div className="flex justify-center md:justify-start space-x-4 text-gray-600">
-          <a href="#facebook" className="hover:text-pink-600">
-            <FaFacebookF className="w-6 h-6" />
-          </a>
-          <a href="#instagram" className="hover:text-pink-600">
-            <FaInstagram className="w-6 h-6" />
-          </a>
-          <a href="#twitter" className="hover:text-pink-600">
-            <FaTwitter className="w-6 h-6" />
-          </a>
-          <a href="#linkedin" className="hover:text-pink-600">
-            <FaLinkedin className="w-6 h-6" />
-          </a>
+      {/* Payment Methods */}
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 mt-12 pt-8 border-t border-gray-800">
+        <h5 className="text-center text-gray-400 mb-6">We Accept</h5>
+        <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+            <RiVisaLine className="text-3xl text-blue-900" />
+            <span className="ml-2 text-gray-300">Visa</span>
+          </div>
+          <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+            <SiMastercard className="text-3xl text-red-600" />
+            <span className="ml-2 text-gray-300">Mastercard</span>
+          </div>
+          <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+            <SiAmericanexpress className="text-3xl text-blue-500" />
+            <span className="ml-2 text-gray-300">American Express</span>
+          </div>
+          <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+            <svg className="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+            </svg>
+            <span className="ml-2 text-gray-300">Cash</span>
+          </div>
+          <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+            <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+            </svg>
+            <span className="ml-2 text-gray-300">Bank Transfer</span>
+          </div>
         </div>
+      </div>
 
-        {/* Payment Icons */}
-        <div className="flex justify-center md:justify-end space-x-4 mt-4 md:mt-0">
-          <div className="flex items-center space-x-1">
-            <FaCcVisa className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
-            <span className="hidden md:block text-sm">Visa</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <FaCcMastercard className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
-            <span className="hidden md:block text-sm">MasterCard</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <FaCcAmex className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
-            <span className="hidden md:block text-sm">American Express</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <FaCashRegister className="w-8 h-8 text-gray-700 hover:text-pink-600 transition duration-300" />
-            <span className="hidden md:block text-sm">Cash On Delivery</span>
-          </div>
-        </div>
+      {/* Copyright */}
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <p>© {new Date().getFullYear()} Emirates Gold & Diamonds. All Rights Reserved.</p>
+        <p className="mt-2">Certified by Dubai Gold & Jewellery Group</p>
       </div>
     </footer>
   );
 }
 
-export default Footer;
+export default UAEFooter;

@@ -18,8 +18,8 @@ const NavigationBar = () => {
     {
       title: "Shop",
       items: [
-        { name: "Diamond", path: "/diamond" },
-        { name: "Gold", path: "/gold" },
+        { name: "Diamond", path: "/Dimondes" },
+        { name: "Gold", path: "/Gold" },
         { name: "Gemstone", path: "/gemstone" },
         { name: "Uncut Diamond", path: "/uncut-diamond" },
         { name: "Platinum", path: "/platinum" },
